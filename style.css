@@ -58,6 +58,7 @@ form{
     align-items: center;
 }
 .pokedex-container{
+    border-color: 10px  black ;
     border-radius: 10px;
     padding: 20px;
     width: 90%;
@@ -85,6 +86,7 @@ h3{
     height: auto;
 }
 .pokemon-detail{
+    margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: bold;
@@ -108,3 +110,75 @@ h3{
 .pokemon-detail img{
     width: 200px;
 }
+
+.container-search{
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-color: black;
+}
+.search-container {
+    border-color: #080ebf;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-input { 
+    border-radius: 5px;
+    height: 20px;
+    width: 300px;
+    padding: 10px;
+}
+
+.search-button {
+    margin: 0;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.pagination-buttons .prev-button, .pagination-buttons .next-button {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor de mano */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el botón deshabilitado */
+.prev-button:hover[disabled], .next-button:hover[disabled] {
+    background-color: #cccccc; /* Color de fondo inactivo */
+    color: #666666; /* Color del texto inactivo */
+    cursor: not-allowed; /* Cursor de no permitido */
+    box-shadow: none; /* Sin sombra */
+}
+
+/* Evitar efecto hover en el botón deshabilitado */
+.prev-button[disabled]:hover, .next-button:[disabled]:hover {
+    background-color: #cccccc; /* Mantener el mismo color */
+    transform: none; /* Sin desplazamiento */
+}
+.prev-button:hover, .next-button:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+    transform: translateY(-2px); /* Efecto de desplazamiento */
+}
+.prev-button:active {
+    transform: translateY(1px); /* Efecto al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+}
+
+

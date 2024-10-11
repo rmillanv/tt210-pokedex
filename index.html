@@ -16,12 +16,22 @@
         <div class="card">
             <form onsubmit="return false;">
                 <div class="pokedex-container">
-                    <h1>Pokedex</h1>
+                    <div class="container-search">
+                        <h1>Pokedex</h1>
+                        <div class="search-container">
+                            <input class="search-input" type="text" id="search-input" placeholder="Buscar pokemon por Id o Nombre"/>
+                            <button class="search-button" id="search-button">Buscar</button>
+                        </div>
+                    </div>
                     <div class="pokemon-list" id="pokemon-list"></div>
                 </div>
                 <!--Detalle de pokemon, esta clase al renderizar la pagina nose va ver por el style="display: none-->
                 <div class="pokemon-detail" id="pokemon-detail" style="display: none;">
                     <div id="pokemon-info"></div>
+                </div>
+                <div class="pagination-buttons">
+                    <button class="prev-button" id="prev-button">Anterior</button>
+                    <button class="next-button" id="next-button">Siguiente</button>
                 </div>
                 <button id="back-button">Vuelta a la pokédex</button>
             </form>
